@@ -1,4 +1,5 @@
-﻿using RPG.Movement;
+﻿using core;
+using RPG.Movement;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -33,7 +34,8 @@ namespace RPG.Combat{
         }
 
         public void Attack(CombatTarget combatTarget) {
-            target= combatTarget.transform;
+            GetComponent<ActionScheduler>().StartAction(this);
+            target = combatTarget.transform;
         }
 
         public void Cancel() {
