@@ -2,19 +2,19 @@
 using System.Collections;
 
 
-namespace core
+namespace RPG.core
 {
     public class ActionScheduler : MonoBehaviour
     {
 
-        MonoBehaviour currentAction = null;
-        public void StartAction(MonoBehaviour action) {
+        IAction currentAction = null;
+        public void StartAction(IAction action) {
 
 
             if (currentAction == action) { return; }
 
             if (currentAction != null) {
-                print("Cancelling" + currentAction);   
+                currentAction.Cancel();
             }
 
             currentAction = action;
