@@ -1,9 +1,7 @@
 ﻿
-using RPG.Combat;
-using RPG.core;
-using System;
-using System.Collections;
-using System.Collections.Generic;
+
+using RPG.Core;
+
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -42,7 +40,6 @@ namespace RPG.Movement
 
 
         public void StartMoveAction(Vector3 destination) {
-
             GetComponent<ActionScheduler>().StartAction(this);
             MoveTo(destination);
         }

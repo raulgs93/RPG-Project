@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-namespace Core
+namespace RPG.Core
 {
 
     public class FollowCamera : MonoBehaviour

@@ -2,7 +2,7 @@
 using System.Collections;
 
 
-namespace RPG.core
+namespace RPG.Core
 {
     public class ActionScheduler : MonoBehaviour
     {
@@ -21,6 +21,13 @@ namespace RPG.core
 
         }
 
+
+        public void CancelAction() {
+            StartAction(null);
+        }
+
+
     }
+
 
 }
