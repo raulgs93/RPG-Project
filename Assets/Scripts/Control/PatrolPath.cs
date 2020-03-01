@@ -8,7 +8,7 @@ namespace RPG.Control
     {
 
         [SerializeField] float radius = .2f;
-        private void OnDrawGizmos() {
+        private void OnDrawGizmosSelected() {
             for (int i = 0; i < transform.childCount; i++) {
                 Gizmos.DrawSphere(GetWaipoint(i), radius);
                 Gizmos.DrawLine(GetWaipoint(i), GetWaipoint(GetNextIndex(i)));

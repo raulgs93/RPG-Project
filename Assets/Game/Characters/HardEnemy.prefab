@@ -67,6 +67,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4837263891464457727, guid: 42ffbcced8096ac4691395be6c65bc74,
+        type: 3}
+      propertyPath: patrolSpeedFraction
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 5752658476275465693, guid: 42ffbcced8096ac4691395be6c65bc74,
         type: 3}
       propertyPath: m_Name
@@ -86,6 +91,11 @@ PrefabInstance:
         type: 3}
       propertyPath: weaponRange
       value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432688321971997928, guid: 42ffbcced8096ac4691395be6c65bc74,
+        type: 3}
+      propertyPath: maxSpeed
+      value: 4.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42ffbcced8096ac4691395be6c65bc74, type: 3}
