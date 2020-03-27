@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
+using RPG.Saving;
+
 
 namespace RPG.Cinematics
 {
-    public class CinematicTrigger : MonoBehaviour
+    public class CinematicTrigger : MonoBehaviour, ISaveable
     {
 
         bool isPlayable = true;
@@ -22,5 +24,15 @@ namespace RPG.Cinematics
             GetComponent<PlayableDirector>().Play();
             isPlayable = false;
         }
+
+
+        public object CaptureState() {
+            return isPlayable;
+        }
+
+        public void RestoreState(object state) {
+            isPlayable = (bool)state;
+        }
+
     }
 }

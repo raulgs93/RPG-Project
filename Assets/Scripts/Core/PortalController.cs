@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.SceneManagement;
 using RPG.SceneManagement;
+using RPG.Saving;
 
 namespace RPG.Core
 {
@@ -39,11 +40,18 @@ namespace RPG.Core
             Fader fader = FindObjectOfType<Fader>();
 
             yield return fader.FadeOut(fadeOutTime);
+
+            SavingWrapper savingWrapper = FindObjectOfType<SavingWrapper>();
+
+            savingWrapper.Save();
             yield return SceneManager.LoadSceneAsync(sceneToLoad);
 
+            savingWrapper.Load();
+            
 
             PortalController otherPortal = GetOtherPortal();
             UpdatePlayer(otherPortal);
+            savingWrapper.Save();
 
             yield return new WaitForSeconds(fadeWaitTime);
 
