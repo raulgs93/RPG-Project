@@ -7,6 +7,23 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 245528505852622555, guid: 09b990ff485b4734a9415a21b3c7ef12,
+        type: 3}
+      propertyPath: weaponPrefab
+      value: 
+      objectReference: {fileID: 2476777213829682244, guid: c5a7f3c94e6d0e44b948defc9a57b0df,
+        type: 3}
+    - target: {fileID: 245528505852622555, guid: 09b990ff485b4734a9415a21b3c7ef12,
+        type: 3}
+      propertyPath: weaponPosition
+      value: 
+      objectReference: {fileID: 4718065318472278010}
+    - target: {fileID: 245528505852622555, guid: 09b990ff485b4734a9415a21b3c7ef12,
+        type: 3}
+      propertyPath: weaponOverride
+      value: 
+      objectReference: {fileID: 22100000, guid: 50042425f6853fd42a0e2606efeb8fd1,
+        type: 2}
     - target: {fileID: 4597526839420780241, guid: 09b990ff485b4734a9415a21b3c7ef12,
         type: 3}
       propertyPath: m_Name
@@ -96,6 +113,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Character_Ninja_White
       objectReference: {fileID: 0}
+    - target: {fileID: 195354, guid: 241659bc2ecdb3c44aae2b1a066043f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 472772, guid: 241659bc2ecdb3c44aae2b1a066043f1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -146,3 +167,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 241659bc2ecdb3c44aae2b1a066043f1, type: 3}
+--- !u!4 &4718065318472278010 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 451664, guid: 241659bc2ecdb3c44aae2b1a066043f1,
+    type: 3}
+  m_PrefabInstance: {fileID: 4718065318472694698}
+  m_PrefabAsset: {fileID: 0}

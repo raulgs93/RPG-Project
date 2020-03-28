@@ -10,7 +10,7 @@ namespace RPG.Saving
     {
 
 
-        [SerializeField] float fadeInTime = 1.5f;
+        [SerializeField] float fadeInTime = 0.5f;
 
         const string defaultSaveFile = "save";
 
