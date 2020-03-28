@@ -92,6 +92,11 @@ PrefabInstance:
       propertyPath: weaponRange
       value: 1.5
       objectReference: {fileID: 0}
+    - target: {fileID: 8318276926743901655, guid: 42ffbcced8096ac4691395be6c65bc74,
+        type: 3}
+      propertyPath: handTransform
+      value: 
+      objectReference: {fileID: 4566373644900609097}
     - target: {fileID: 8432688321971997928, guid: 42ffbcced8096ac4691395be6c65bc74,
         type: 3}
       propertyPath: maxSpeed
@@ -166,3 +171,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 278fbc8682262ca4fa2ece1a816e7f66, type: 3}
+--- !u!4 &4566373644900609097 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 491048, guid: 278fbc8682262ca4fa2ece1a816e7f66,
+    type: 3}
+  m_PrefabInstance: {fileID: 4566373644900946529}
+  m_PrefabAsset: {fileID: 0}

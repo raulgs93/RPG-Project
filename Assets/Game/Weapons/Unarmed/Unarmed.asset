@@ -10,10 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 69d397e56d276454bb9b0287626b03f9, type: 3}
-  m_Name: Ninjato
+  m_Name: Unarmed
   m_EditorClassIdentifier: 
-  weaponOverride: {fileID: 22100000, guid: 50042425f6853fd42a0e2606efeb8fd1, type: 2}
-  equippedPrefab: {fileID: 2476777213829682244, guid: c5a7f3c94e6d0e44b948defc9a57b0df,
-    type: 3}
-  weaponDamage: 20
-  weaponRange: 2
+  weaponOverride: {fileID: 0}
+  equippedPrefab: {fileID: 0}
+  weaponDamage: 5
+  weaponRange: 1

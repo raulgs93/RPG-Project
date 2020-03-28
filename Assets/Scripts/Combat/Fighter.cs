@@ -9,19 +9,18 @@ using UnityEngine;
 namespace RPG.Combat{
     public class Fighter : MonoBehaviour, IAction
     {
-        [SerializeField] float weaponRange = 2f;
+        
         [SerializeField] float timeBetweenAttacks = 1f;
-        [SerializeField] float weaponDamage = 20f;
         [SerializeField] Transform handTransform  = null;
-        [SerializeField] Weapon weapon = null;
+        [SerializeField] Weapon defaultWeapon = null;
         
 
         Health target;
-
         float timeElapsed = Mathf.Infinity;
+        Weapon currentWeapon = null;
 
         private void Start() {
-            SpawnWeapon();
+            EquipWeapon(defaultWeapon);
         }
 
         private void Update() {
@@ -57,7 +56,7 @@ namespace RPG.Combat{
         }
 
         private bool GetIsInRange() {
-            return Vector3.Distance(transform.position, target.transform.position) <= weaponRange;
+            return Vector3.Distance(transform.position, target.transform.position) <= currentWeapon.GetWeaponRange();
         }
 
         public void Attack(GameObject combatTarget) {
@@ -81,8 +80,9 @@ namespace RPG.Combat{
             GetComponent<Mover>().Cancel();
         }
 
-        public void SpawnWeapon() {
-            if (weapon == null) { return; }
+        public void EquipWeapon(Weapon weapon) {
+
+            currentWeapon = weapon;
             Animator animator = GetComponent<Animator>();
             weapon.Spawn(animator, handTransform);
         }
@@ -91,7 +91,7 @@ namespace RPG.Combat{
         void Hit() {
 
             if(target == null) { return; }
-            target.TakeDamage(weaponDamage);
+            target.TakeDamage(currentWeapon.GetWeaponDamage());
 
         }
 

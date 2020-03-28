@@ -61,6 +61,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32a02de6a6cf2194798f0e6e0e1c82ea, type: 3}
+--- !u!4 &2957766836996990133 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 455858, guid: 32a02de6a6cf2194798f0e6e0e1c82ea,
+    type: 3}
+  m_PrefabInstance: {fileID: 2957766836997066759}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8638623044097542009
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -148,6 +154,11 @@ PrefabInstance:
       propertyPath: timeBetweenAttacks
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 8318276926743901655, guid: 42ffbcced8096ac4691395be6c65bc74,
+        type: 3}
+      propertyPath: handTransform
+      value: 
+      objectReference: {fileID: 2957766836996990133}
     - target: {fileID: 8432688321971997928, guid: 42ffbcced8096ac4691395be6c65bc74,
         type: 3}
       propertyPath: maxSpeed

@@ -31,6 +31,7 @@ MonoBehaviour:
   dwellTime: 1
   patrolPath: {fileID: 0}
   waypointTolerance: 1
+  patrolSpeedFraction: 0.2
 --- !u!114 &6490202208916237466
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57,6 +58,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   navMeshAgent: {fileID: 0}
+  maxSpeed: 6
 --- !u!1001 &8077274286034125580
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -68,6 +70,18 @@ PrefabInstance:
       propertyPath: m_Speed
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 245528505852622555, guid: 09b990ff485b4734a9415a21b3c7ef12,
+        type: 3}
+      propertyPath: weapon
+      value: 
+      objectReference: {fileID: 11400000, guid: f44a1cde198604242a8c8c2c2c2efdd0,
+        type: 2}
+    - target: {fileID: 245528505852622555, guid: 09b990ff485b4734a9415a21b3c7ef12,
+        type: 3}
+      propertyPath: defaultWeapon
+      value: 
+      objectReference: {fileID: 11400000, guid: f44a1cde198604242a8c8c2c2c2efdd0,
+        type: 2}
     - target: {fileID: 4597526839420780241, guid: 09b990ff485b4734a9415a21b3c7ef12,
         type: 3}
       propertyPath: m_Name
