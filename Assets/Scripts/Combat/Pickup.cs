@@ -10,8 +10,6 @@ public class Pickup : MonoBehaviour
 
     private void OnTriggerEnter(Collider other) {
 
-        print("Collided with pickup");
-
         if (other.gameObject.CompareTag("Player")) {
             other.GetComponent<Fighter>().EquipWeapon(weapon);
             Destroy(gameObject);
