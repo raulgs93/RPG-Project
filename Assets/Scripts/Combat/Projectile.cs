@@ -11,28 +11,44 @@ namespace RPG.Combat
     {
 
         [SerializeField] float projectileSpeed = 10f;
+        [SerializeField] bool isHoming = false;
+        [SerializeField] GameObject hitEffect = null;
+        [SerializeField] float destroyDelay = 10f;
         
         Health target = null;
         float damage = 0;
 
+        private void Start() {
+            transform.LookAt(GetAimPosition());
+        }
 
         private void Update() {
             if (target == null) { return; }
 
-            transform.LookAt(GetAimPosition());
+            if (isHoming && target.GetIsAlive()) {
+                transform.LookAt(GetAimPosition());
+            }
+
             transform.Translate(Vector3.forward * Time.deltaTime * projectileSpeed);
+
         }
 
         private void OnTriggerEnter(Collider other) {
 
             Health targetHealth = other.GetComponent<Health>();
 
-            if ( targetHealth == target) {
+            if ( targetHealth == target && target.GetIsAlive()) {
                 targetHealth.TakeDamage(damage);
+
+                if (hitEffect != null) {
+                    print("instantiate");
+                    GameObject particleHit = Instantiate(hitEffect, GetAimPosition(), transform.rotation);
+                }
+
                 Destroy(gameObject);
             }
             else {
-                return;
+                Destroy(gameObject, destroyDelay);
             }
 
         }
