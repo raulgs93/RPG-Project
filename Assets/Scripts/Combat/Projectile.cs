@@ -41,7 +41,6 @@ namespace RPG.Combat
                 targetHealth.TakeDamage(damage);
 
                 if (hitEffect != null) {
-                    print("instantiate");
                     GameObject particleHit = Instantiate(hitEffect, GetAimPosition(), transform.rotation);
                 }
 
