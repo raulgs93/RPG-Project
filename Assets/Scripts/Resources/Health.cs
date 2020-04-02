@@ -47,6 +47,11 @@ namespace RPG.Resources
 			return isAlive;
 		}
 
+
+		public float GetPercentage() {
+			return (health / GetComponent<BaseStats>().GetHealth()) * 100;
+		}
+
 		public object CaptureState() {
 			return health;
 		}

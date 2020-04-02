@@ -92,6 +92,11 @@ namespace RPG.Combat
 			weapon.Spawn(animator, rightHandTransform, leftHandTransform);
 		}
 
+		public Health GetTarget() {
+			return target;
+		}
+
+
 		//animation event
 		void Hit() {
 			if (target == null) { return; }
