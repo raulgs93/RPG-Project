@@ -8208,6 +8208,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CommonEnemy Archer (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4320998676192635512, guid: ceedbf89771675e4ab74ba385a0f42f1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6067310752810654046, guid: ceedbf89771675e4ab74ba385a0f42f1,
         type: 3}
       propertyPath: uniqueIdentifier
@@ -9942,7 +9947,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1849225535}
-  m_LocalRotation: {x: 0.06574249, y: 0.2029567, z: -0.013658627, w: 0.9768828}
+  m_LocalRotation: {x: 0.06574249, y: 0.20295675, z: -0.013658632, w: 0.97688276}
   m_LocalPosition: {x: -43.65, y: -1.45, z: -5.61}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:

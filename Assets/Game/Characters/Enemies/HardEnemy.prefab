@@ -77,6 +77,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: HardEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: 6958788696749954821, guid: 42ffbcced8096ac4691395be6c65bc74,
+        type: 3}
+      propertyPath: characterClass
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8318276926743901655, guid: 42ffbcced8096ac4691395be6c65bc74,
         type: 3}
       propertyPath: weaponDamage
